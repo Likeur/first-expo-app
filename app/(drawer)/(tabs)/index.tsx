@@ -1,9 +1,9 @@
 import { View, Text, StyleSheet } from 'react-native';
 
-export default function DetailsScreen() {
+export default function Tab() {
   return (
     <View style={styles.container}>
-      <Text>Not Found</Text>
+      <Text>Tab Home</Text>
     </View>
   );
 }

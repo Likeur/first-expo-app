@@ -1,0 +1,63 @@
+import { DrawerContentScrollView, DrawerItem } from '@react-navigation/drawer';
+import { Drawer } from 'expo-router/drawer';
+import { router } from 'expo-router';
+import Ionicons from '@expo/vector-icons/Ionicons';
+
+export default function Layout() {
+  return (
+    <Drawer drawerContent={() => 
+        <DrawerContentScrollView>
+            <DrawerItem 
+                label={'Home'} 
+                onPress={() => {
+                    router.push('/(drawer)/(tabs)');
+                }}
+                icon={({ color, size }) => (
+                    <Ionicons name={'home-outline'} color={color} size={size} />
+                )}
+            />
+            <DrawerItem 
+                label={'About'} 
+                onPress={() => {
+                    router.push('/(drawer)/(tabs)/about');
+                }}
+                icon={({ color, focused, size }) => (
+                    <Ionicons name={focused ? 'information-circle' : 'information-circle-outline'} color={color} size={size} />
+                )}
+            />
+
+            <DrawerItem 
+                label={'Camera'} 
+                onPress={() => {
+                    router.push('/(drawer)/(tabs)/camera');
+                }}
+                icon={({ color, focused, size }) => (
+                    <Ionicons name={"camera-outline"} color={color} size={size} />
+                )}
+            />
+
+            <DrawerItem 
+                label={'Audio'} 
+                onPress={() => {
+                    router.push('/(drawer)/(tabs)/enregistrement_audio');
+                }}
+                icon={({ color, focused, size }) => (
+                    <Ionicons name={"caret-forward-outline"} color={color} size={size} />
+                )}
+            />
+
+            <DrawerItem 
+                label={'Internet'} 
+                onPress={() => {
+                    router.push('/(drawer)/(tabs)/internet');
+                }}
+                icon={({ color, focused, size }) => (
+                    <Ionicons name={"caret-forward-outline"} color={color} size={size} />
+                )}
+            />
+        </DrawerContentScrollView>}>
+
+        <Drawer.Screen name="(tabs)" options={{title: ""}} />
+    </Drawer>
+  );
+}

@@ -3,7 +3,7 @@ import { View, Text, StyleSheet } from 'react-native';
 export default function DetailsScreen() {
   return (
     <View style={styles.container}>
-      <Text>Not Found</Text>
+      <Text>Page A propos</Text>
     </View>
   );
 }
