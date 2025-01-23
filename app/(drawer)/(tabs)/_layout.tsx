@@ -32,6 +32,28 @@ export default function TabLayout() {
           tabBarIcon: ({ color }) => <FontAwesome size={20} name="play" color={color} />,
         }}
       />
+      <Tabs.Screen
+        name="connexion"
+        options={{
+          title: 'connexion',
+          tabBarIcon: ({ color }) => <FontAwesome size={20} name="wifi" color={color} />,
+        }}
+      />
+
+      <Tabs.Screen
+        name="contact"
+        options={{
+          title: 'contact',
+          tabBarIcon: ({ color }) => <FontAwesome size={20} name="th" color={color} />,
+        }}
+      />
+      <Tabs.Screen
+        name="localisation"
+        options={{
+          title: 'localisation',
+          tabBarIcon: ({ color }) => <FontAwesome size={20} name="map" color={color} />,
+        }}
+      />
     </Tabs>
   );
 }

@@ -47,12 +47,30 @@ export default function Layout() {
             />
 
             <DrawerItem 
-                label={'Internet'} 
+                label={'connexion'} 
                 onPress={() => {
-                    router.push('/(drawer)/(tabs)/internet');
+                    router.push('/(drawer)/(tabs)/connexion');
                 }}
                 icon={({ color, focused, size }) => (
-                    <Ionicons name={"caret-forward-outline"} color={color} size={size} />
+                    <Ionicons name={"wifi"} color={color} size={size} />
+                )}
+            />
+            <DrawerItem 
+                label={'Localisation'} 
+                onPress={() => {
+                    router.push('/(drawer)/(tabs)/localisation');
+                }}
+                icon={({ color, focused, size }) => (
+                    <Ionicons name={"map"} color={color} size={size} />
+                )}
+            />
+            <DrawerItem 
+                label={'contact'} 
+                onPress={() => {
+                    router.push('/(drawer)/(tabs)/contact');
+                }}
+                icon={({ color, focused, size }) => (
+                    <Ionicons name={"funnel"} color={color} size={size} />
                 )}
             />
         </DrawerContentScrollView>}>
