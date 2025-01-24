@@ -54,7 +54,9 @@ git clone https://github.com/Likeur/first-expo-app.git
 
 * navigate to the actual project directory
 
+```bash
 cd firstApp
+```
 
 * install dependencies
 
