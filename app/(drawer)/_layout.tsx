@@ -79,7 +79,7 @@ export default function Layout() {
                     router.push('/(drawer)/facultes');  
                 }}
                 icon={({ color, focused, size }) => (
-                    <Ionicons name={"funnel"} color={color} size={size} />
+                    <Ionicons name={"business-outline"} color={color} size={size} />
                 )}
             />
             <DrawerItem 
@@ -88,7 +88,7 @@ export default function Layout() {
                     router.push('/(drawer)/promotion');  
                 }}
                 icon={({ color, focused, size }) => (
-                    <Ionicons name={"funnel"} color={color} size={size} />
+                    <Ionicons name={"briefcase-outline"} color={color} size={size} />
                 )}
             />
             <DrawerItem 
@@ -97,7 +97,7 @@ export default function Layout() {
                     router.push('/(drawer)/student');  
                 }}
                 icon={({ color, focused, size }) => (
-                    <Ionicons name={"funnel"} color={color} size={size} />
+                    <Ionicons name={"accessibility-outline"} color={color} size={size} />
                 )}
             />
         </DrawerContentScrollView>}>
