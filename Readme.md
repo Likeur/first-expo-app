@@ -71,3 +71,62 @@ npm install
 npx expo start
 ```
 
+
+
+
+import React, { useState, useEffect } from 'react';
+import {
+  View,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  TextInput,
+  ScrollView,
+  StatusBar,
+  Platform,
+} from 'react-native';
+import { MaterialIcons } from '@expo/vector-icons';
+import { SQLiteProvider } from 'expo-sqlite';
+import { migrateDbIfNeeded } from '@/components/migrations';
+import {
+  addStudent,
+  getStudents,
+  getStudentById,
+  updateStudent,
+  deleteStudent,
+  getPromotions,
+} from '@/components/crud';
+
+
+import React, { useState, useEffect } from 'react';
+import {
+  View,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  TextInput,
+  ScrollView,
+  StatusBar,
+  Platform,
+} from 'react-native';
+import { MaterialIcons } from '@expo/vector-icons';
+import { SQLiteProvider } from 'expo-sqlite';
+import { migrateDbIfNeeded } from '@/components/migrations';
+import {
+  addStudent,
+  getStudents,
+  getStudentById,
+  updateStudent,
+  deleteStudent,
+  getPromotions,
+} from '@/components/crud';
+
+interface Student {
+  id?: number;
+  registrationNumber: string;
+  firstName: string;
+  lastName: string;
+  email: string;
+  phone: string;
+  promotionId: number;
+}

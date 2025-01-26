@@ -128,7 +128,7 @@ export async function addStudent(
             first_name, 
             last_name, 
             email, 
-            phone, 
+            phone_number, 
             promotion_id, 
             registration_number
         ) VALUES (
@@ -208,7 +208,7 @@ export async function updateStudent(
             first_name = $firstName,
             last_name = $lastName,
             email = $email,
-            phone = $phone,
+            phone_number = $phone,
             promotion_id = $promotionId,
             registration_number = $registrationNumber
          WHERE id = $id`,
