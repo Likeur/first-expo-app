@@ -82,6 +82,15 @@ export default function Layout() {
                     <Ionicons name={"funnel"} color={color} size={size} />
                 )}
             />
+            <DrawerItem 
+                label={'promotion'} 
+                onPress={() => {
+                    router.push('/(drawer)/promotion');  
+                }}
+                icon={({ color, focused, size }) => (
+                    <Ionicons name={"funnel"} color={color} size={size} />
+                )}
+            />
         </DrawerContentScrollView>}>
 
         <Drawer.Screen name="(tabs)" options={{title: ""}} />
